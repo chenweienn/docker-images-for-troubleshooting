@@ -3,9 +3,6 @@ FROM alpine:3.16
 MAINTAINER Weien Chen "cenbiqing@gmail.com"
 RUN apk add mandoc man-pages mandoc-apropos less less-doc curl curl-doc bash bash-doc bash-completion util-linux coreutils binutils findutils grep
 
-# add vim
-RUN apk add vim
-
 # add dig
 RUN apk add bind-tools
 
