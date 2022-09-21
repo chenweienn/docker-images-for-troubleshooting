@@ -1,0 +1,14 @@
+# Version: 3.0
+FROM alpine:3.16
+MAINTAINER Weien Chen "cenbiqing@gmail.com"
+RUN apk add mandoc man-pages mandoc-apropos less less-doc vim curl curl-doc bash bash-doc bash-completion util-linux coreutils binutils findutils grep
+
+# add dig
+RUN apk add bind-tools
+
+# add tcpdump
+RUN apk add tcpdump
+
+RUN export PAGER=less
+
+

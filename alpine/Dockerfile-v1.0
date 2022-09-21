@@ -1,0 +1,5 @@
+# Version: 1.0
+FROM alpine
+MAINTAINER Wayne Chen "cenbiqing@gmail.com"
+RUN /bin/sh -c 'apk add man man-pages less vim curl curl-doc bash bash-doc bash-completion grep'
+CMD /bin/bash
